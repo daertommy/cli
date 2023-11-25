@@ -13,6 +13,7 @@
 - [#3536](https://github.com/ignite/cli/pull/3536) Change app.go to v2 and add AppWiring feature
 - [#3659](https://github.com/ignite/cli/pull/3659) cosmos-sdk `v0.50.x`
 - [#3670](https://github.com/ignite/cli/pull/3670) Remove nodetime binaries
+- [#3707](https://github.com/ignite/cli/pull/3707) Add collections support
 - [#3724](https://github.com/ignite/cli/pull/3724) Add or vendor proto packages from Go dependencies
 - [#3715](https://github.com/ignite/cli/pull/3715) Add test suite for the cli tests
 - [#3756](https://github.com/ignite/cli/pull/3756) Add faucet compatibility for latest sdk chains
