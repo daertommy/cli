@@ -68,13 +68,6 @@ func (app *App) registerIBCModules() {
 	)
 
 	// add capability keeper and ScopeToModule for ibc module
-	app.CapabilityKeeper = capabilitykeeper.NewKeeper(
-		app.AppCodec(),
-		app.GetKey(capabilitytypes.StoreKey),
-		app.GetMemKey(capabilitytypes.MemStoreKey),
-	)
-
-	// add capability keeper and ScopeToModule for ibc module
 	scopedIBCKeeper := app.CapabilityKeeper.ScopeToModule(ibcexported.ModuleName)
 	scopedIBCTransferKeeper := app.CapabilityKeeper.ScopeToModule(ibctransfertypes.ModuleName)
 	scopedICAControllerKeeper := app.CapabilityKeeper.ScopeToModule(icacontrollertypes.SubModuleName)
